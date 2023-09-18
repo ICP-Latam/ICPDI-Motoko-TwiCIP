@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "twitter_dapp_backend": {
+      "type": "motoko",
+      "main": "src/twitter_dapp_backend/main.mo"
+    },
+    "twitter_dapp_frontend": {
+      "type": "assets",
+      "source": [
+        "src/twitter_dapp_frontend/assets"
+      ],
+      "dependencies": [
+        "twitter_dapp_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}
